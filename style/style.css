@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-background-color:#121212;
+    --secondary-background-color:#232323;
+}
+body{
+    background-color: #000000;
+    padding: 10px;
+    color: white;
+    overflow: hidden;
+
+}
+/* -------------- Grid Container --------------*/
+.gridContainer{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 90vh 10vh;
+    grid-gap: 10px;
+}
+/* -------------- Sidebar --------------*/
+.sideBar{
+    background-color: aqua;
+    border-radius: 5px;
+    background-color: var(--secondary-background-color);
+}
+/* -------------- Main Body --------------*/
+.mainBody{
+    background-color: bisque;
+    border-radius: 5px;
+    background-color: var(--secondary-background-color);
+    
+}
+/* -------------- Music Player --------------*/
+.player{
+    grid-column: 1 / span 2;
+    background-color: var(--secondary-background-color);
+}
