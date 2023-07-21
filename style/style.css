@@ -5,26 +5,63 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
-    --primary-background-color:#ffff;
-    --secondary-background-color:#232323;
+    --text-color:#ffffff;
+    --button-background-color:#ffffff;
+    --button-text-color:#000609;
+    --play-background-color:#1ed760;
+    --background-color:#121212;
+    --box-primary-color:#282828;
+    --box-secondary-color:#181818;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+a:hover{
+    color: var(--text-color);
+}
+ul{
+    list-style-type: none;
+}
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px; 
+}
+/* --------------------------------- */
+/* Button */
+.customButton{
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    font-weight: 600;
+    font-size: 15px;
+    padding:4px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 32px;
+    width: 160px;
+    border-radius: 20px;
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out 0s;
+
+}
+.customButton:hover{
+    transform: scale(1);
 }
 body{
     background-color: #000000;
     padding: 8px;
-    color: var(--primary-background-color);
+    color: #ffff;
     overflow: hidden;
+    cursor: default;
 
-}
-a{
-    text-decoration: none;
-    color: var(--primary-background-color);
-    cursor: pointer;
-}
-a:hover{
-    color: var(--primary-background-color);
-}
-ul{
-    list-style-type: none;
 }
 /* -------------- Layout --------------*/
 .gridContainer{
@@ -39,12 +76,11 @@ ul{
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    
 }
 /*   Home and search container  */
 .homeSearch{
     height: 112px;
-    background-color: var(--secondary-background-color);
+    background-color: var(--background-color);
     border-radius: 5px;
     padding: 8px 12px;
 }
@@ -71,10 +107,12 @@ ul{
 }
 /*   Librery Container   */
 .librery{
-    background-color: var(--secondary-background-color);
+    background-color: var(--background-color);
     border-radius: 5px;
+    padding: 0px 10px;
+    height: 100%;
 }
-/*      Your Librery     */
+/*      Header     */
 .yourLibrery{
     height: 56px;
     padding: 8px 16px;
@@ -101,15 +139,29 @@ ul{
     background-color: #2e2e2e;
     opacity: 1;
 }
+/* Box Section */
+.libBox{
+    background-color: var(--box-primary-color);
+    padding: 16px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.libboxHeading1{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.libboxHeading2{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
 /* -------------- Main Body --------------*/
 .mainBody{
-    background-color: bisque;
     border-radius: 5px;
-    background-color: var(--secondary-background-color);
-    
+    background-color: var(--background-color);
+    overflow: auto; 
 }
 /* -------------- Music Player --------------*/
 .player{
     grid-column: 1 / span 2;
-    background-color: var(--secondary-background-color);
+    background-color: var(--background-color);
 }
