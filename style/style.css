@@ -8,6 +8,7 @@
     --text-color:#ffffff;
     --button-background-color:#ffffff;
     --button-text-color:#000609;
+    --sticky-nav-backgroung:#0c0a0a;
     --play-background-color:#1ed760;
     --background-color:#121212;
     --box-primary-color:#282828;
@@ -116,6 +117,8 @@ body{
 .yourLibrery{
     height: 56px;
     padding: 8px 16px;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 15px;
 }
 .iconLibrery span{
     margin-left: 15px;
@@ -160,6 +163,24 @@ body{
     background-color: var(--background-color);
     overflow: auto; 
 }
+/* Sticky navbar */
+.navBar{
+    background-color: var(--sticky-nav-backgroung);
+    padding: 10px 20px;
+}
+/*          Arrows           */
+.arrow{
+    height: 32px;
+    width: 72px;
+}
+.navArrow{
+    height: 32px;
+    width: 32px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 /* -------------- Music Player --------------*/
 .player{
     grid-column: 1 / span 2;
