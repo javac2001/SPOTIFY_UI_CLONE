@@ -166,6 +166,9 @@ body{
 .navBar{
     background-color: var(--sticky-nav-backgroung);
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 20px 17px -9px rgba(0,0,0,0.75);
 }
 /*          Arrows           */
 .arrow{
