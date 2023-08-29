@@ -13,6 +13,9 @@
     --background-color:#121212;
     --box-primary-color:#282828;
     --box-secondary-color:#181818;
+    --card-main-color:#181818;
+    --card-hover-color:#282828;
+    --card-font-color:#a1a1a1;
 }
 a{
     text-decoration: none;
@@ -196,6 +199,69 @@ body{
     height: 48px;
     width: 110px;
     padding: 8px 32px;
+}
+/* -------------- Cards --------------*/
+.mainCards{
+    padding: 1rem 1.5rem;
+}
+/* Card Header */
+.mainCardHeader{
+    height: 50px;
+}
+.cardHeaderTitle{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.cardHeaderShow{
+    color: var(--card-font-color);
+    font-size: 0.9rem;
+}
+.cardHeaderHover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.boxContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    overflow: hidden;
+    height: 265px;
+    margin-bottom: 2rem;
+}
+.cards{
+    /* width: 174px; */
+    height: 265px;
+    background-color: var(--card-main-color);
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.cardImg{
+    height: 9rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 13px;
+}
+.cardImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.paraFirst{
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+.paraSecond{
+    margin-top: 3px;
+    margin-top: 10px;
+    color: var(--card-font-color);
+    font-size: 0.6rem;
+    line-height: 16px;
+    letter-spacing: 1.3px;
 }
 /* -------------- Music Player --------------*/
 .player{
