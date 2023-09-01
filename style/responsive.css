@@ -1,4 +1,19 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 400px) {
+    .gridContainer{
+        grid-template-columns: 220px auto;
+    }
+    .boxContainer {
+        grid-template-columns: repeat(1, 1fr);
+        height: 300px;
+    }
+    .cards{
+        height: 300px;
+    }
+    .cardImg{
+        height: 11rem;
+    }
+  }
+@media only screen and (min-width: 580px) {
     .boxContainer {
         grid-template-columns: repeat(2, 1fr);
         height: 300px;
@@ -10,9 +25,72 @@
         height: 11rem;
     }
   }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
     .boxContainer {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        height: 300px;
+    }
+    .cards{
+        height: 300px;
+    }
+    .cardImg{
+        height: 11rem;
+    }
+    .gridContainer{
+        grid-template-columns: 280px auto;
+    }
+  }
+@media only screen and (min-width: 1000px) {
+    .boxContainer {
+        grid-template-columns: repeat(4, 1fr);
+        height: 300px;
+    }
+    .cards{
+        height: 300px;
+    }
+    .cardImg{
+        height: 11rem;
+    }
+  }
+@media only screen and (min-width: 1300px) {
+    .boxContainer {
+        grid-template-columns: repeat(5, 1fr);
+        height: 300px;
+    }
+    .cards{
+        height: 300px;
+    }
+    .cardImg{
+        height: 11rem;
+    }
+  }
+@media only screen and (min-width: 1550px) {
+    .boxContainer {
+        grid-template-columns: repeat(6, 1fr);
+        height: 300px;
+    }
+    .cards{
+        height: 300px;
+    }
+    .cardImg{
+        height: 11rem;
+    }
+  }
+@media only screen and (min-width: 1660px) {
+    .boxContainer {
+        grid-template-columns: repeat(7, 1fr);
+        height: 300px;
+    }
+    .cards{
+        height: 300px;
+    }
+    .cardImg{
+        height: 11rem;
+    }
+  }
+@media only screen and (min-width: 1700px) {
+    .boxContainer {
+        grid-template-columns: repeat(8, 1fr);
         height: 300px;
     }
     .cards{
