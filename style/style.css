@@ -202,7 +202,7 @@ body{
 }
 /* -------------- Cards --------------*/
 .mainCards{
-    padding: 1rem 1.5rem;
+    padding: 0px 24px;
 }
 /* Card Header */
 .mainCardHeader{
@@ -230,14 +230,16 @@ body{
     margin-bottom: 2rem;
 }
 .cards{
-    /* width: 174px; */
     height: 265px;
     background-color: var(--card-main-color);
     padding: 15px;
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
-    
+    transition: all 0.2s ease-in-out 0s;
+}
+.cards:hover{
+    background-color: var(--card-hover-color);
 }
 .cardImg{
     height: 9rem;
@@ -249,7 +251,6 @@ body{
 .cardImg img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
 }
 .paraFirst{
     font-weight: 800;
@@ -262,6 +263,58 @@ body{
     font-size: 0.6rem;
     line-height: 16px;
     letter-spacing: 1.3px;
+}
+
+
+.footerSection{
+    margin-top: 20px;
+    padding: 8px 32px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.supportSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.support{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.support p{
+    font-weight: bolder;
+}
+.support span{
+    color: var(--card-font-color);
+    margin-bottom: 10px;
+}
+.contectSection{
+    display: flex;
+}
+.mediaIcons{
+    margin-right: 10px;
+    background-color: var(--box-primary-color);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+    font-size: 1.2rem;
+}
+.mediaIcons:hover{
+    background-color: var(--card-font-color);
+    font-size: 1.4rem;
+}
+.footerCopyright{
+    padding: 8px 32px 40px;
+}
+.footerCopyright p{
+    color: var(--card-font-color);
+    font-size: 0.8rem;
 }
 /* -------------- Music Player --------------*/
 .player{
